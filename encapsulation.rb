@@ -15,7 +15,7 @@ puts obj.velocidad
 
 
 # attr_writer
-class Ventilador2
+class Ventilador
   attr_writer :marca
 
   def initialize(params)
@@ -27,7 +27,7 @@ class Ventilador2
   end
 end
 
-obj = Ventilador2.new(marca: 'XYZ')
+obj = Ventilador.new(marca: 'XYZ')
 
 puts obj.presentacion
 
@@ -36,8 +36,8 @@ obj.marca = 'ABC'
 puts obj.presentacion
 
 
-# attr_writer
-class Ventilador2
+# attr_accessor
+class Ventilador
   attr_accessor :marca
 
   def initialize(params)
@@ -49,7 +49,7 @@ class Ventilador2
   end
 end
 
-obj = Ventilador2.new(marca: 'XYZ')
+obj = Ventilador.new(marca: 'XYZ')
 
 puts obj.marca
 
